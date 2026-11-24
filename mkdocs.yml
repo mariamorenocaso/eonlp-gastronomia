@@ -1,0 +1,28 @@
+site_name: eonlp — NLP para Esperanto
+repo_url: https://github.com/USUARIO/REPOSITORIO
+theme:
+  name: material
+  language: es
+
+nav:
+  - Inicio: index.md
+  - Guía de uso: uso.md
+  - Gramática y reglas: reglas.md
+  - Dataset: dataset.md
+  - Referencia de la API: api.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_source: false
+            docstring_style: google
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences

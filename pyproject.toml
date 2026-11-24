@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eonlp"
+version = "1.0.0"
+description = "Librería de NLP para Esperanto basada en reglas, con interfaz similar a spaCy"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "María Moreno" },
+    { name = "Adriana Díaz" },
+    { name = "Sofía Pérez" },
+]
+keywords = ["esperanto", "nlp", "tokenizer", "lemmatizer", "pos-tagging"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Natural Language :: Esperanto",
+    "Topic :: Text Processing :: Linguistic",
+]
+# La librería no depende de nada: solo usa la biblioteca estándar.
+dependencies = []
+
+[project.optional-dependencies]
+dataset = ["requests>=2.28"]
+test = ["pytest>=7", "requests>=2.28"]
+docs = ["mkdocs>=1.5,<2", "mkdocs-material>=9", "mkdocstrings[python]>=0.24"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

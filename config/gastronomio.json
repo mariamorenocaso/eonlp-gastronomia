@@ -1,0 +1,102 @@
+{
+  "description": "Gastronomía en Esperanto: comida, bebida y postre (categorías contrastadas en Vikipedio, noviembre 2026)",
+  "seed": 42,
+  "depth": 1,
+  "max_articles_per_class": 200,
+  "min_articles_per_class": 25,
+  "min_paragraph_chars": 40,
+  "min_esperanto_ratio": 0.6,
+  "classes": {
+    "comida": {
+      "categories": [
+        "Manĝaĵoj",
+        "Manĝoj",
+        "Supoj",
+        "Salatoj",
+        "Viando",
+        "Legomoj"
+      ],
+      "fallback_articles": [
+        "Pano",
+        "Fromaĝo",
+        "Rizo",
+        "Pasto",
+        "Supo",
+        "Salato",
+        "Ovo",
+        "Fiŝo",
+        "Viando",
+        "Legomo",
+        "Terpomo",
+        "Pico"
+      ]
+    },
+    "bebida": {
+      "categories": [
+        "Trinkaĵoj",
+        "Alkoholaĵoj",
+        "Senalkoholaĵoj",
+        "Kafo",
+        "Teoj"
+      ],
+      "fallback_articles": [
+        "Vino",
+        "Biero",
+        "Kafo",
+        "Teo",
+        "Akvo",
+        "Suko",
+        "Lakto",
+        "Trinkaĵo",
+        "Ĉampano"
+      ]
+    },
+    "postre": {
+      "categories": [
+        "Dolĉaĵoj",
+        "Desertoj",
+        "Kukoj",
+        "Tortoj"
+      ],
+      "fallback_articles": [
+        "Kuko",
+        "Glaciaĵo",
+        "Ĉokolado",
+        "Bombono",
+        "Biskvito",
+        "Pudingo",
+        "Mielo",
+        "Torto",
+        "Krespo"
+      ]
+    }
+  },
+  "reserved_articles": [
+    "Kolbaso",
+    "Hamburgero",
+    "Sandviĉo",
+    "Paelo",
+    "Spagetoj",
+    "Viskio",
+    "Vodko",
+    "Rumo",
+    "Sidro",
+    "Konjako",
+    "Marcipano",
+    "Baklavo",
+    "Tiramisuo",
+    "Karamelo",
+    "Vaflo",
+    "Itala kuirarto",
+    "Hispana kuirarto"
+  ],
+  "stop_sections": [
+    "Vidu ankaŭ",
+    "Referencoj",
+    "Eksteraj ligiloj",
+    "Notoj",
+    "Fontoj",
+    "Literaturo",
+    "Bibliografio"
+  ]
+}
