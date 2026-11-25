@@ -1,0 +1,27 @@
+{
+  "paragraphs_kept": 3152,
+  "paragraphs_per_class": {
+    "bebida": 1183,
+    "comida": 1186,
+    "postre": 783
+  },
+  "articles_per_class": {
+    "comida": 200,
+    "bebida": 200,
+    "postre": 148
+  },
+  "articles_without_text": [],
+  "discarded_paragraphs": {
+    "titulo": 889,
+    "corto": 840,
+    "seccion_final": 388,
+    "no_esperanto": 91,
+    "duplicado": 2,
+    "etiqueta_contradictoria": 2
+  },
+  "article_selection": {
+    "ambiguous": 62,
+    "reserved": 11,
+    "lists": 11
+  }
+}
