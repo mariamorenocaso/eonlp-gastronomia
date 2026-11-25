@@ -17,7 +17,7 @@ Incluye:
 ## Instalación
 
 ```bash
-pip install git+https://github.com/USUARIO/REPOSITORIO.git
+pip install git+https://github.com/mariamorenocaso/eonlp-gastronomia.git@v1.0.0
 ```
 
 ## Ejemplo rápido
