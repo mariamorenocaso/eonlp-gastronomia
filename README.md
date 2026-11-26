@@ -15,7 +15,7 @@ Sistema completo para clasificar párrafos en Esperanto en tres categorías cerc
 ## Instalación de la librería
 
 ```bash
-pip install git+https://github.com/USUARIO/REPOSITORIO.git
+pip install git+https://github.com/mariamorenocaso/eonlp-gastronomia.git
 ```
 
 ```python
@@ -26,15 +26,21 @@ doc = nlp("La kuiristo bakis ĉokoladajn kukojn.")
 [(t.text, t.lemma_, t.pos_, str(t.morph)) for t in doc]
 ```
 
-La documentación completa está en `docs/` y se publica en Read the Docs.
-
-## Estado del dataset y verificación
-
-**Pendiente de generar con conexión real.** Este ZIP no contiene `data/dataset.csv`, ni se han calculado métricas de entrenamiento sobre Wikipedia. Los tests automáticos y la ejecución offline del notebook se realizan con datos de prueba; no deben presentarse como resultados reales en la entrega.
+La documentación completa está en `docs/` y se publica en Read the Docs: https://eonlp-gastronomia.readthedocs.io
 
 ## Dataset
 
-Una vez generado, `data/dataset.csv` cumple el contrato de datos: UTF-8, separador `;`, cabecera `text;class` y un párrafo por fila.
+`data/dataset.csv` cumple el contrato de datos: UTF-8, separador `;`, cabecera `text;class` y un párrafo por fila.
+
+| Clase | Artículos | Párrafos |
+|---|---|---|
+| comida | 200 | 1.186 |
+| bebida | 200 | 1.183 |
+| postre | 148 | 783 |
+| **Total** | **548** | **3.152** |
+
+Generado en noviembre de 2026 a partir de Vikipedio. Todas las clases superan los 300 párrafos que recomienda el enunciado.
+El detalle de párrafos descartados está en `data/noise_report.json` y la revisión de etiquetas dudosas, en `data/revision_etiquetas.csv`.
 
 Para regenerarlo:
 
@@ -67,7 +73,7 @@ La opción `REGENERAR_DATASET` puede reconstruir el dataset desde el propio cuad
 
 ```
 ├── config/gastronomio.json      # categorías de Vikipedio por clase y parámetros
-├── data/                        # dataset generado (dataset.csv, dataset_meta.csv, ...)
+├── data/                        # dataset y ficheros auxiliares (ver data/LEEME.md)
 ├── docs/                        # documentación (MkDocs + Read the Docs)
 ├── notebooks/                   # cuaderno de la Fase 3
 ├── scripts/build_dataset.py     # construcción del dataset
